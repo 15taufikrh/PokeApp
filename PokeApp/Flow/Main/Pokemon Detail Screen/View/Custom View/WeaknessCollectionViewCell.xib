@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WeaknessCollectionViewCell" customModule="PokeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="oAz-DN-QM1">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESh-NA-Tqt">
+                        <rect key="frame" x="33" y="6.5" width="62" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="oAz-DN-QM1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Wm-0r-peS"/>
+                <constraint firstItem="ESh-NA-Tqt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Dev-pp-QgR"/>
+                <constraint firstItem="ESh-NA-Tqt" firstAttribute="leading" secondItem="oAz-DN-QM1" secondAttribute="trailing" constant="5" id="WZD-Xo-kV6"/>
+                <constraint firstAttribute="trailing" secondItem="ESh-NA-Tqt" secondAttribute="trailing" constant="5" id="ks9-dv-1nN"/>
+                <constraint firstAttribute="bottom" secondItem="oAz-DN-QM1" secondAttribute="bottom" id="qsD-s1-xv2"/>
+                <constraint firstItem="oAz-DN-QM1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rqn-Qo-7J6"/>
+            </constraints>
+            <size key="customSize" width="213" height="60"/>
+            <connections>
+                <outlet property="typeImageView" destination="oAz-DN-QM1" id="vlG-oL-lIK"/>
+                <outlet property="typeLabel" destination="ESh-NA-Tqt" id="6sx-Q1-gSf"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="60.267857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fire" width="28" height="28"/>
+    </resources>
+</document>
